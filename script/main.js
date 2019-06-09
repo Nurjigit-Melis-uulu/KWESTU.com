@@ -4,6 +4,7 @@ let opacityObjText = document.querySelectorAll(".opacity-text");
 
 document.addEventListener("scroll", event => {
   let position = document.querySelector("body").getBoundingClientRect();
+  let screenHeight = document.documentElement.clientHeight;
 
   if (position.y < 0) {
     nav.className = "active";
@@ -14,7 +15,7 @@ document.addEventListener("scroll", event => {
   opacityObjImg.forEach(element => {
     let elementPos = element.getBoundingClientRect();
 
-    if (elementPos.y >= position.height / 2) {
+    if (elementPos.y <= screenHeight / 2 || elementPos.bottom <= screenHeight) {
       element.style.opacity = "1";
     }
   });
@@ -22,8 +23,9 @@ document.addEventListener("scroll", event => {
   opacityObjText.forEach(element => {
     let elementPos = element.getBoundingClientRect();
 
-    if (elementPos.y >= position.height / 2) {
+    if (elementPos.y <= screenHeight / 2 || elementPos.bottom <= screenHeight) {
       element.className = "opacity-none";
     }
   });
+  console.log(document.documentElement.clientHeight);
 });

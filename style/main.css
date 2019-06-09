@@ -21,6 +21,7 @@ nav {
   top: 0;
   left: 0;
   transition: all 1s;
+  z-index: 99;
 }
 
 nav.active {
@@ -130,12 +131,12 @@ article .text {
 }
 
 .opacity-none {
+  opacity: 0;
   animation: opacityNone 1s .4s 1 ease-in-out forwards;
 }
 
 @keyframes opacityNone {
   from {
-    opacity: 0;
     transform: translateX(-20px);
   }
 
