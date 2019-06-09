@@ -110,7 +110,7 @@ article {
 }
 
 article .text {
-  border-left: 2px solid sandybrown;
+  border-left: 3px solid sandybrown;
   box-sizing: border-box;
   padding: 0 20px;
 }
