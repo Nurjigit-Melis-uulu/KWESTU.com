@@ -55,15 +55,15 @@ document.addEventListener("scroll", () => {
   console.log(document.documentElement.clientHeight);
 });
 
-carouselRightButton.addEventListener("click", () => changeSlide(1));
-carouselLeftButton.addEventListener("click", () => changeSlide(-1));
+carouselRightButton.addEventListener("click", () => changeSlide(1, false));
+carouselLeftButton.addEventListener("click", () => changeSlide(-1, false));
 
-function changeSlide(number) {
-  carouselIndex = carouselIndex + number;
+function changeSlide(number, index) {
+  index ? (carouselIndex = index) : (carouselIndex = carouselIndex + number);
 
-  if (carouselIndex === 0) {
+  if (carouselIndex === 0 || carouselIndex === "0") {
     carouselLeftButton.disabled = true;
-  } else if (carouselIndex === 2) {
+  } else if (carouselIndex === 2 || carouselIndex === "2") {
     carouselRightButton.disabled = true;
   } else {
     carouselRightButton.disabled = false;
@@ -84,13 +84,6 @@ function changeSlide(number) {
 carouselStatus.forEach(element => {
   element.addEventListener("mousedown", () => {
     let index = element.getAttribute("data-value");
-    for (let i = 0; i < carouselContents.length; i++) {
-      carouselContents[i].className = "cont";
-      carouselContents[index].className = "cont active";
-    }
-    for (let i = 0; i < carouselStatus.length; i++) {
-      carouselStatus[i].className = "";
-      carouselStatus[index].className = "active";
-    }
+    changeSlide(null, index);
   });
 });
