@@ -92,13 +92,19 @@ header h1 {
   margin: 0;
 }
 
+section {
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
 .container {
   width: 60%;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .content {
   display: flex;
+  margin: 40px 0;
 }
 
 article {
