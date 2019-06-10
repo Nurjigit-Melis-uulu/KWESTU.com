@@ -51,8 +51,8 @@ function changeSlide(number) {
   }
 
   for (let i = 0; i < carouselContents.length; i++) {
-    carouselContents[i].className = "content";
-    carouselContents[carouselIndex].className = "content active";
+    carouselContents[i].className = "cont";
+    carouselContents[carouselIndex].className = "cont active";
   }
   for (let i = 0; i < carouselStatus.length; i++) {
     carouselStatus[i].className = "";
