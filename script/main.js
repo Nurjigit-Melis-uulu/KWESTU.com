@@ -80,3 +80,17 @@ function changeSlide(number) {
   }
   console.log(carouselIndex);
 }
+
+carouselStatus.forEach(element => {
+  element.addEventListener("mousedown", () => {
+    let index = element.getAttribute("data-value");
+    for (let i = 0; i < carouselContents.length; i++) {
+      carouselContents[i].className = "cont";
+      carouselContents[index].className = "cont active";
+    }
+    for (let i = 0; i < carouselStatus.length; i++) {
+      carouselStatus[i].className = "";
+      carouselStatus[index].className = "active";
+    }
+  });
+});
