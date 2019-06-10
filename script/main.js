@@ -1,7 +1,7 @@
 let nav = document.querySelector("nav");
 let opacityObjImg = document.querySelectorAll(".opacity-img");
 let opacityObjText = document.querySelectorAll(".opacity-text");
-let carouselContents = document.querySelectorAll(".carousel .content");
+let carouselContents = document.querySelectorAll(".carousel .cont");
 let carouselStatus = document.querySelectorAll(".carousel-status-bar div");
 let carouselLeftButton = document.querySelector(".left-button");
 let carouselRightButton = document.querySelector(".right-button");

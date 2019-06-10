@@ -205,7 +205,7 @@ footer i:hover {
   position: relative;
 }
 
-.carousel .content {
+.carousel .cont {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -281,4 +281,45 @@ footer i:hover {
   background: rgba(26, 100, 143);
   font-weight: bold;
   color: white;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .content {
+    flex-flow: column
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+    padding: 0;
+  }
+
+  article div.text {
+    border: none;
+    border-top: 3px solid sandybrown;
+    transform: translateX(-20px);
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 4em;
+  }
 }
