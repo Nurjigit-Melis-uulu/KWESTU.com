@@ -5,7 +5,27 @@ let carouselContents = document.querySelectorAll(".carousel .cont");
 let carouselStatus = document.querySelectorAll(".carousel-status-bar div");
 let carouselLeftButton = document.querySelector(".left-button");
 let carouselRightButton = document.querySelector(".right-button");
+let backDrop = document.querySelector(".back-drop");
+let drawer = document.querySelector("nav .drawer");
+let menuButton = document.querySelector("#menu-button");
+let boll = false;
 let carouselIndex = 0;
+
+backDrop.addEventListener("click", function() {
+  drawer.style.transform = "translate(-100%)";
+  backDrop.style.display = "none";
+});
+
+menuButton.addEventListener("click", function() {
+  boll = !boll;
+
+  if (boll) {
+    drawer.style.transform = "translateX(0)";
+    backDrop.style.display = "block";
+  } else {
+    drawer.style.transform = "translate(-100%)";
+  }
+});
 
 document.addEventListener("scroll", () => {
   let position = document.querySelector("body").getBoundingClientRect();
