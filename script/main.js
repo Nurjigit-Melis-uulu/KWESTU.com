@@ -94,9 +94,9 @@ carouselStatus.forEach(element => {
     }
     carouselIndex = parseInt(index);
 
-    if (parseInt(index) === 0) {
+    if (carouselIndex === 0) {
       carouselLeftButton.disabled = true;
-    } else if (parseInt(index) === 2) {
+    } else if (carouselIndex === 2) {
       carouselRightButton.disabled = true;
     } else {
       carouselRightButton.disabled = false;
