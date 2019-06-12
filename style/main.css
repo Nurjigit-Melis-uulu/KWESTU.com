@@ -135,9 +135,13 @@ header h1 {
   border-bottom: 2px solid white;
 }
 
-header button {
-  padding: 16px 20px;
-  margin: 10px 0 0;
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  margin: 10px auto 0;
   border-radius: 10px;
   border: none;
   background: rgb(83, 158, 40);
@@ -146,10 +150,56 @@ header button {
   font-weight: bold;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
   outline: none;
+  text-decoration: none;
 }
 
-header button:hover {
+header a:hover {
   background: rgb(74, 138, 37);
+}
+
+section {
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+}
+
+.content {
+  display: flex;
+  margin: 40px 0;
+  flex-flow: wrap;
+}
+
+article {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+article .text {
+  border-left: 3px solid sandybrown;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+article h2 {
+  font-size: 2em;
+}
+
+article p {
+  font-size: 1.2em;
+}
+
+.image {
+  width: 50%;
+  height: 400px;
 }
 
 .opacity-img {
@@ -210,6 +260,132 @@ footer i {
 
 footer i:hover {
   color: orangered;
+}
+
+.carousel {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  position: relative;
+}
+
+.carousel .cont {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  margin: 0;
+  background: white;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.carousel div.active {
+  opacity: 1;
+}
+
+.carousel button {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 30px);
+  z-index: 10;
+  border: 2px solid white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+  background: white;
+  opacity: .8;
+  outline: none;
+  transition: transform .4s;
+}
+
+.carousel button:hover {
+  opacity: 1;
+  background: #d5e1f0;
+}
+
+.carousel button:active {
+  transform: scale(.9, .9);
+}
+
+.carousel button:disabled {
+  background: rgba(52, 55, 68, 0.5);
+}
+
+.left-button {
+  left: -30px;
+}
+
+.right-button {
+  right: -30px;
+}
+
+.carousel-status-bar {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+}
+
+.carousel-status-bar div {
+  padding: .2em .52em;
+  margin: 0 10px;
+  border-radius: 100%;
+  border: 2px solid rgba(26, 100, 143);
+}
+
+.carousel-status-bar div.active {
+  transform: scale(1.5, 1.5);
+  background: rgba(26, 100, 143);
+  font-weight: bold;
+  color: white;
+}
+
+.bg {
+  width: 100%;
+  height: 200px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .content {
+    flex-flow: column
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+    padding: 0;
+  }
+
+  article div.text {
+    border: none;
+    border-top: 3px solid sandybrown;
+    transform: translateX(-20px);
+    padding: 0;
+  }
 }
 
 @media (max-width: 600px) {
