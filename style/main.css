@@ -479,8 +479,6 @@ footer i:hover {
   box-sizing: border-box;
   padding: 20px 20px 0;
   display: flex;
-  background: url(../assets/images/164572d4.jpeg);
-  background-size: cover;
   color: black;
   align-items: flex-end;
   position: relative;
@@ -512,4 +510,18 @@ footer i:hover {
 
 .quests button:hover {
   background: rgb(74, 138, 37);
+}
+
+.quests .quest .image {
+  height: 100%;
+}
+
+.bg-1 {
+  background: url(../assets/images/city.jpg);
+  background-size: cover;
+}
+
+.bg-2 {
+  background: url(../assets/images/164572d4.jpeg);
+  background-size: cover;
 }
