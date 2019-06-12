@@ -385,6 +385,34 @@ footer i:hover {
     transform: translateX(-20px);
     padding: 0;
   }
+
+  .quests .image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  div.quest {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  div.description {
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description p {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -445,6 +473,7 @@ footer i:hover {
 
 .quests {
   width: 100%;
+  height: 80vh;
   box-sizing: border-box;
   padding: 20px 20px 0;
   display: flex;
@@ -452,6 +481,7 @@ footer i:hover {
   background-size: cover;
   color: black;
   align-items: flex-end;
+  position: relative;
 }
 
 .quest {
@@ -459,6 +489,7 @@ footer i:hover {
 }
 
 .description {
+  width: 100%;
   background: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   padding: 20px;
