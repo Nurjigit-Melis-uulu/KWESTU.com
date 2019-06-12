@@ -158,7 +158,6 @@ header a:hover {
 }
 
 section {
-  padding: 20px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, .4);
   display: flex;
   flex-flow: column;
@@ -442,4 +441,42 @@ footer i:hover {
     height: initial;
     margin: 10px 0;
   }
+}
+
+.quests {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  display: flex;
+  background: url(../assets/images/164572d4.jpeg);
+  background-size: cover;
+  color: black;
+  align-items: flex-end;
+}
+
+.quest {
+  width: 50%;
+}
+
+.description {
+  background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.quests button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(83, 158, 40);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+  outline: none;
+}
+
+.quests button:hover {
+  background: rgb(74, 138, 37);
 }
