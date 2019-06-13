@@ -15,27 +15,12 @@
 
 <body>
 
-  <nav>
-    <div class="logo">
-      <img src="./assets/images/Kwestu-logo.png" alt="kwest">
-    </div>
-    <ul>
-      <li>
-        <a href="#home" class="active">Главная</a>
-      </li>
-      <li>
-        <a href="#about">О нас</a>
-      </li>
-      <li>
-        <a href="#contacts">Контакты</a>
-      </li>
-    </ul>
-    <button id="menu-button">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </button>
-    <div class="drawer">
+  <main id="main_page" class="active">
+
+    <nav>
+      <div class="logo">
+        <img src="./assets/images/Kwestu-logo.png" alt="kwest">
+      </div>
       <ul>
         <li>
           <a href="#home" class="active">Главная</a>
@@ -47,29 +32,174 @@
           <a href="#contacts">Контакты</a>
         </li>
       </ul>
-    </div>
-    <div class="back-drop"></div>
+      <button id="menu-button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <div class="drawer">
+        <ul>
+          <li>
+            <a href="#home" class="active">Главная</a>
+          </li>
+          <li>
+            <a href="#about">О нас</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="back-drop"></div>
+    </nav>
 
-  </nav>
+    <header>
+      <div>
+        <h1>
+          KWESTU
+        </h1>
+        <p>
+          Окунись в мир приключений вместе с нами!
+        </p>
+        <a href="#quests">
+          Начать приключение!
+        </a>
+      </div>
+    </header>
 
-  <header>
-    <div>
-      <h1>
-        KWESTU
-      </h1>
-      <p>
-        Окунись в мир приключений вместе с нами!
-      </p>
-      <a href="#quests">
-        Начать приключение!
-      </a>
-    </div>
-  </header>
+    <section>
+      <div class="quests bg-1" id="quests">
+        <div class="quest">
+          <div class="description">
+            <h2>Защити город от злодея!</h2>
+            <p>
+              Злой ученный по имени Кристовски, хочет захватить наш город, лишь команда смелых ,отважных, и бесстрашных
+              смельчаков могут остановить его злой план. Против вас будут коварные люди со своими самыми трудными
+              загадками, смогут ли остановить наши герои или злой ученый захватит весь мир?
+            </p>
+            <p>
+              Вы столкнётесь с загадками по сложнее сфинкса, будете атакованы викингами, что пришли к нам из
+              преисподней,
+              и должны найти ключ
+            </p>
+            <button class="more" data-page="more_page">
+              Подробнее
+            </button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/images/maxresdefault.png" alt="">
+        </div>
+      </div>
+      <div class="quests bg-2" id="quests">
+        <div class="image">
+          <img src="./assets/images/doctor.png" alt="">
+        </div>
+        <div class="quest">
+          <div class="description">
+            <h2>Защити город от злодея!</h2>
+            <p>
+              Злой ученный по имени Жокер, хочет захватить наш город, лишь команда смелых ,отважных, и бесстрашных
+              смельчаков могут остановить его злой план. Против вас будут коварные люди со своими самыми трудными
+              загадками, смогут ли остановить наши герои или злой ученый захватит весь мир?
+            </p>
+            <p>
+              Вы столкнётесь с загадками по сложнее сфинкса, будете атакованы викингами, что пришли к нам из
+              преисподней,
+              и должны найти ключ
+            </p>
+            <button>
+              Подробнее
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="quests bg-3" id="quests">
+        <div class="quest">
+          <div class="description">
+            <h2>Защити город от злодея!</h2>
+            <p>
+              Злой ученный по имени Кристовски, хочет захватить наш город, лишь команда смелых ,отважных, и бесстрашных
+              смельчаков могут остановить его злой план. Против вас будут коварные люди со своими самыми трудными
+              загадками, смогут ли остановить наши герои или злой ученый захватит весь мир?
+            </p>
+            <p>
+              Вы столкнётесь с загадками по сложнее сфинкса, будете атакованы викингами, что пришли к нам из
+              преисподней,
+              и должны найти ключ
+            </p>
+            <button>
+              Подробнее
+            </button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/images/colorise-man.png" alt="">
+        </div>
+      </div>
+      <div class="container" id="about">
+        <div class="content">
+          <h3 class="opacity-img">Мы работаем в сфере развлекательных программ:</h3>
+          <div class="carousel opacity-img">
+            <button class="left-button" disabled="true">Left</button>
+            <button class="right-button">Right</button>
+            <div class="carousel-status-bar">
+              <div class="active" data-value="0">1</div>
+              <div data-value="1">2</div>
+              <div data-value="2">3</div>
+            </div>
+            <div class="cont active">
+              <div>
+                <h3>Частные поездки на дни рождения</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur vitae, cupiditate, quia culpa
+                  temporibus ex eveniet quae, tenetur nesciunt dignissimos corrupti in! Reiciendis rerum iste labore
+                  tempora
+                  rem totam atque?
+                </p>
+              </div>
+            </div>
+            <div class="cont">
+              <div>
+                <h3>Квест комнаты</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur vitae, cupiditate, quia culpa
+                  temporibus ex eveniet quae, tenetur nesciunt dignissimos corrupti in! Reiciendis rerum iste labore
+                  tempora
+                  rem totam atque?
+                </p>
+              </div>
+            </div>
+            <div class="cont">
+              <div>
+                <h3>Нахождение кладов</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur vitae, cupiditate, quia culpa
+                  temporibus ex eveniet quae, tenetur nesciunt dignissimos corrupti in! Reiciendis rerum iste labore
+                  tempora
+                  rem totam atque?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          .block
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <section>
-    <div class="quests bg-2" id="quests">
-      <div class="quest">
-        <div class="description">
+  <main id="more_page">
+    <header class="more__quests bg-1" id="quests">
+      <h2>Защити город от злодея!</h2>
+      <div class="image">
+        <img src="./assets/images/maxresdefault.png" alt="">
+      </div>
+    </header>
+    <div class="container">
+      <div class="content">
+        <article>
           <h2>Защити город от злодея!</h2>
           <p>
             Злой ученный по имени Кристовски, хочет захватить наш город, лишь команда смелых ,отважных, и бесстрашных
@@ -77,113 +207,25 @@
             загадками, смогут ли остановить наши герои или злой ученый захватит весь мир?
           </p>
           <p>
-            Вы столкнётесь с загадками по сложнее сфинкса, будете атакованы викингами, что пришли к нам из преисподней,
+            Вы столкнётесь с загадками по сложнее сфинкса, будете атакованы викингами, что пришли к нам из
+            преисподней,
             и должны найти ключ
           </p>
-          <button>
-            Подробнее
-          </button>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./assets/images/maxresdefault.png" alt="">
-      </div>
-    </div>
-    <div class="quests bg-2" id="quests">
-      <div class="image">
-        <img src="./assets/images/doctor.png" alt="">
-      </div>
-      <div class="quest">
-        <div class="description">
-          <h2>Защити город от злодея!</h2>
-          <p>
-            Злой ученный по имени Жокер, хочет захватить наш город, лишь команда смелых ,отважных, и бесстрашных
-            смельчаков могут остановить его злой план. Против вас будут коварные люди со своими самыми трудными
-            загадками, смогут ли остановить наши герои или злой ученый захватит весь мир?
-          </p>
-          <p>
-            Вы столкнётесь с загадками по сложнее сфинкса, будете атакованы викингами, что пришли к нам из преисподней,
-            и должны найти ключ
-          </p>
-          <button>
-            Подробнее
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="container" id="about">
-      <div class="content">
-        <div class="image opacity-img">
-          <img src="./assets/images/river.jpg" alt="river">
-        </div>
-        <article class="opacity-text">
-          <div class="text">
-            <h2>Описание компании</h2>
+          <div>
+            <h3>Условия:</h3>
             <p>
-              Компания “KWESTU” создано 2019 - году 28 - мая под предводительством Маратбек уулу Рустам. Наша компания
-              предоставляет узнать свой город, в котором они ещё не видели раньше. В компании работают лишь молодые
-              энергичные перспективные люди. Основные клиенты компании студенты и школьники города Каракол.
+              Команда состоит из 3 человек
+            </p>
+            <h3>Стоимость:</h3>
+            <p>
+              входной билет: 600 сом
             </p>
           </div>
+          <button>Играть!</button>
         </article>
-      </div>
-      <div class="content">
-        <article class="opacity-text">
-          <div class="text">
-
-          </div>
-        </article>
-        <div class="image opacity-img">
-          <img src="./assets/images/baeb0e4708b37660b2a066de5a30ffa2.jpg" alt="river">
-        </div>
-      </div>
-      <div class="content">
-        <h3 class="opacity-img">Мы работаем в сфере развлекательных программ:</h3>
-        <div class="carousel opacity-img">
-          <button class="left-button" disabled="true">Left</button>
-          <button class="right-button">Right</button>
-          <div class="carousel-status-bar">
-            <div class="active" data-value="0">1</div>
-            <div data-value="1">2</div>
-            <div data-value="2">3</div>
-          </div>
-          <div class="cont active">
-            <div>
-              <h3>Частные поездки на дни рождения</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur vitae, cupiditate, quia culpa
-                temporibus ex eveniet quae, tenetur nesciunt dignissimos corrupti in! Reiciendis rerum iste labore
-                tempora
-                rem totam atque?
-              </p>
-            </div>
-          </div>
-          <div class="cont">
-            <div>
-              <h3>Квест комнаты</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur vitae, cupiditate, quia culpa
-                temporibus ex eveniet quae, tenetur nesciunt dignissimos corrupti in! Reiciendis rerum iste labore
-                tempora
-                rem totam atque?
-              </p>
-            </div>
-          </div>
-          <div class="cont">
-            <div>
-              <h3>Нахождение кладов</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur vitae, cupiditate, quia culpa
-                temporibus ex eveniet quae, tenetur nesciunt dignissimos corrupti in! Reiciendis rerum iste labore
-                tempora
-                rem totam atque?
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
+  </main>
 
   <img src="./assets/images/bg.jpg.png" alt="live" class="bg">
 

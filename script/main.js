@@ -8,6 +8,7 @@ let carouselRightButton = document.querySelector(".right-button");
 let backDrop = document.querySelector(".back-drop");
 let drawer = document.querySelector("nav .drawer");
 let menuButton = document.querySelector("#menu-button");
+let buttonMore = document.querySelector(".more");
 let boll = false;
 let carouselIndex = 0;
 
@@ -103,4 +104,14 @@ carouselStatus.forEach(element => {
       carouselLeftButton.disabled = false;
     }
   });
+});
+
+buttonMore.addEventListener("click", function() {
+  let mains = document.querySelectorAll("main");
+  let content = document.getElementById(buttonMore.getAttribute("data-page"));
+  mains.forEach(element => {
+    element.className = "";
+  });
+  content.className = "active";
+  document.clientTop = 0;
 });
