@@ -113,5 +113,5 @@ buttonMore.addEventListener("click", function() {
     element.className = "";
   });
   content.className = "active";
-  document.clientTop = 0;
+  window.scrollTo(0, 0);
 });
