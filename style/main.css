@@ -491,18 +491,16 @@ footer i:hover {
   border-top-right-radius: 20px;
 }
 
-.quests button {
+.quests a {
   padding: 5px 10px;
   border-radius: 10px;
-  border: none;
   background: rgb(83, 158, 40);
   color: white;
   font-weight: bold;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
-  outline: none;
 }
 
-.quests button:hover {
+.quests a:hover {
   background: rgb(74, 138, 37);
 }
 
@@ -562,4 +560,21 @@ main {
 
 main.active {
   display: block;
+}
+
+.back {
+  padding: 5px 10px;
+  background: rgb(92, 93, 92);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-decoration: none;
+  opacity: .6;
+}
+
+.back:hover {
+  opacity: 1;
 }

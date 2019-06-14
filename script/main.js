@@ -8,7 +8,7 @@ let carouselRightButton = document.querySelector(".right-button");
 let backDrop = document.querySelector(".back-drop");
 let drawer = document.querySelector("nav .drawer");
 let menuButton = document.querySelector("#menu-button");
-let buttonMore = document.querySelector(".more");
+let buttonMore = document.querySelectorAll(".more");
 let boll = false;
 let carouselIndex = 0;
 
@@ -53,7 +53,6 @@ document.addEventListener("scroll", () => {
       element.className = "opacity-none";
     }
   });
-  console.log(document.documentElement.clientHeight);
 });
 
 carouselRightButton.addEventListener("click", () => changeSlide(1));
@@ -106,12 +105,14 @@ carouselStatus.forEach(element => {
   });
 });
 
-buttonMore.addEventListener("click", function() {
-  let mains = document.querySelectorAll("main");
-  let content = document.getElementById(buttonMore.getAttribute("data-page"));
-  mains.forEach(element => {
-    element.className = "";
+buttonMore.forEach(element => {
+  element.addEventListener("click", function() {
+    let mains = document.querySelectorAll("main");
+    let content = document.getElementById(element.getAttribute("data-page"));
+    mains.forEach(element => {
+      element.className = "";
+    });
+    content.className = "active";
+    window.scrollTo(0, 0);
   });
-  content.className = "active";
-  window.scrollTo(0, 0);
 });
